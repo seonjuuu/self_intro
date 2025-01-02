@@ -37,6 +37,7 @@ fetch("https://m.search.naver.com/p/csearch/content/apirender.nhn?where=nexearch
         const fortuneTextE = document.createElement("p");  // 오늘의 운세 풀이 추가
         fortuneTextE.textContent = fortuneText;
         
+        
         fortuneSection.append(sectionTitle);
         fortuneSection.append(fortuneE);
         fortuneSection.append(fortuneTextE);
