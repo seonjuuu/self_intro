@@ -28,14 +28,14 @@ fetch("https://m.search.naver.com/p/csearch/content/apirender.nhn?where=nexearch
         console.log(fortune); // 추출한 텍스트 출력
         console.log(fortuneText); // 추출한 텍스트 출력
 
-        const fortuneSection = document.createElement("section");
-        const sectionTitle = document.createElement("h2");
-        sectionTitle.textContent = "오늘의 운세"
-        const fortuneE = document.createElement("h3")
+        const fortuneSection = document.createElement("section");  // 오늘의 운세 section 생성
+        const sectionTitle = document.createElement("h2");  // 오늘의 운세 타이틀 생성
+        sectionTitle.textContent = "오늘의 운세";
+        const fortuneE = document.createElement("h3");  // 오늘의 운세명 추가
         fortuneE.style.margin = 0;
         fortuneE.textContent = fortune;
-        const fortuneTextE = document.createElement("p");
-        fortuneText.textContent = fortuneText;
+        const fortuneTextE = document.createElement("p");  // 오늘의 운세 풀이 추가
+        fortuneTextE.textContent = fortuneText;
         
         fortuneSection.append(sectionTitle);
         fortuneSection.append(fortuneE);
